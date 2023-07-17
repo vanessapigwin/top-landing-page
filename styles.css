@@ -1,6 +1,6 @@
-/* * {
+* {
     border: solid red 1px;
-} */
+}
 
 a {
     color: #E5E7EB;
@@ -43,8 +43,8 @@ h2 {
 }
 
 img {
-    height: 240px;
-    width: 240px;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
 }
 
@@ -59,8 +59,38 @@ p, ul {
     padding: 0;
 }
 
+.bullet-cards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-self: center;
+    padding: 30px;
+}
+
+.card {
+    flex: 0 0 210px;
+}
+
+.card img {
+    border: solid 6px #3882F6;
+    border-radius: 90px;
+    height: 170px;
+    width: 170px;
+}
+
 .card p {
     color: #1F2937;
+}
+
+.bullet-cards > .card-holder {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    text-align: center;
 }
 
 .cta-section {
@@ -131,6 +161,7 @@ p, ul {
 .headline-contents > img {
     align-self: flex-end;
     flex: 0 1 240px;
+    min-height: 260px;
     min-width: 450px;
     width: auto;
 }
