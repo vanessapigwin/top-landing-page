@@ -1,6 +1,6 @@
-* {
+/* * {
     border: solid red 1px;
-}
+} */
 
 a {
     color: #E5E7EB;
@@ -65,7 +65,18 @@ p, ul {
     flex-direction: column;
     gap: 20px;
     justify-self: center;
-    padding: 30px;
+    padding: 80px;
+}
+
+.bullet-cards > .card-holder {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 60px;
+    justify-content: center;
+    text-align: center;
 }
 
 .card {
@@ -83,28 +94,34 @@ p, ul {
     color: #1F2937;
 }
 
-.bullet-cards > .card-holder {
-    display: flex;
-    flex: 0 1 auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 60px;
-    justify-content: center;
-    text-align: center;
-}
-
 .cta-section {
-    background-color: #3882F6;
+    align-items: center;
     color: #F9FAF8;
+    display: flex;
+    justify-content: center;
+    padding: 80px;
 }
 
 .cta-section button {
     border: solid #F9FAF8 3px;
+    flex: 0 0 auto;
 }
 
 .cta-section .main-text {
     font-size: 24px;
     font-weight: bold;
+}
+
+.cta-box {
+    align-items: center;
+    background-color: #3882F6;
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    gap: 40px;
+    justify-content: space-around;
+    max-width: 1080px;
+    padding: 60px;
 }
 
 .footer, .header {
