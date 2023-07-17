@@ -1,6 +1,6 @@
-* {
+/* * {
     border: solid red 1px;
-}
+} */
 
 a {
     color: #E5E7EB;
@@ -43,12 +43,14 @@ h2 {
 }
 
 img {
-    width: 30%;
-    height: auto;
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
 }
 
 li {
     list-style: none;
+    flex: 1;
 }
 
 p, ul {
@@ -82,15 +84,20 @@ p, ul {
     display: flex;
     flex: 0;
     justify-content: center;
+    padding: 10px 30px;
+}
+
+.footer {
     padding: 20px;
 }
 
 .header > .header-contents {
     align-items: center;
-    width: 900px;
     display: flex;
     flex-direction: row;
+    gap: 20px;
     justify-content: space-between;
+    width: 1080px;
 }
 
 .header-contents > .header-logo a {
@@ -100,17 +107,48 @@ p, ul {
     font-weight: bold;
 }
 
+.header-contents > .right-header {
+    color: #E5E7EB;
+    display: flex;
+    gap: 20px;
+    text-align: right;
+}
+
 .headline {
     background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    padding: 90px 30px;
+}
+
+.headline-contents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width:1080px;
+}
+
+.headline-contents > img {
+    align-self: flex-end;
+    flex: 0 1 240px;
+    min-width: 450px;
+    width: auto;
+}
+
+.headline-contents > .headline-text {
+    align-items:flex-start;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+    gap: 10px;
+}
+
+.headline-contents > .headline-text > button {
+    flex: auto;
 }
 
 .headline p {
     color: #E5E7EB;
-}
-
-.header > .right-header {
-    color: #E5E7EB;
-    display: flex;
 }
 
 .quote-section .quote{
