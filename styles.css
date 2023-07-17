@@ -183,14 +183,15 @@ p, ul {
 }
 
 .quote-section {
+    align-items: center;
     background-color: #E5E7EB;
     display: flex;
+    flex-direction: column;
     padding: 100px;
 }
 
 .quote-contents {
-    width: 1080px;
-    flex: 1;
+    max-width: 1080px;
     flex-wrap: wrap;
 }
 
