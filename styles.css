@@ -178,8 +178,8 @@ p, ul {
 .headline-contents > img {
     align-self: flex-end;
     flex: 0 1 240px;
-    min-height: 260px;
-    min-width: 450px;
+    min-height: 200px;
+    min-width: 280px;
     width: auto;
 }
 
